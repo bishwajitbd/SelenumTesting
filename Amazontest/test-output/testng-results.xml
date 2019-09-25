@@ -1,13 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="3" passed="3">
+<testng-results skipped="0" failed="2" total="3" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="33779" started-at="2019-09-25T05:35:52Z" finished-at="2019-09-25T05:36:26Z">
+  <suite name="Suite" duration-ms="22000" started-at="2019-09-25T18:44:12Z" finished-at="2019-09-25T18:44:34Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="33779" started-at="2019-09-25T05:35:52Z" finished-at="2019-09-25T05:36:26Z">
-      <class name="Amazon.OrderLoginTestWithWorngEmail">
-        <test-method status="PASS" signature="basePageNavigation(java.lang.String)[pri:0, instance:Amazon.OrderLoginTestWithWorngEmail@d8355a8]" name="basePageNavigation" duration-ms="15326" started-at="2019-09-25T01:36:00Z" data-provider="getData" finished-at="2019-09-25T01:36:15Z">
+    <test name="Navigation test" duration-ms="11263" started-at="2019-09-25T18:44:12Z" finished-at="2019-09-25T18:44:23Z">
+      <class name="Amazon.NevigationTest">
+        <test-method status="PASS" signature="initialize()[pri:0, instance:Amazon.NevigationTest@38c6f217]" name="initialize" is-config="true" duration-ms="9111" started-at="2019-09-25T14:44:12Z" finished-at="2019-09-25T14:44:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialize -->
+        <test-method status="PASS" signature="basePageNavigation(java.lang.String)[pri:0, instance:Amazon.NevigationTest@38c6f217]" name="basePageNavigation" duration-ms="63" started-at="2019-09-25T14:44:21Z" data-provider="getData" finished-at="2019-09-25T14:44:21Z">
           <params>
             <param index="0">
               <value>
@@ -18,7 +22,66 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- basePageNavigation -->
-        <test-method status="PASS" signature="basePageNavigation(java.lang.String)[pri:0, instance:Amazon.OrderLoginTestWithWorngEmail@d8355a8]" name="basePageNavigation" duration-ms="9067" started-at="2019-09-25T01:36:15Z" data-provider="getData" finished-at="2019-09-25T01:36:24Z">
+        <test-method status="PASS" signature="teardown()[pri:0, instance:Amazon.NevigationTest@38c6f217]" name="teardown" is-config="true" duration-ms="2076" started-at="2019-09-25T14:44:21Z" finished-at="2019-09-25T14:44:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- Amazon.NevigationTest -->
+    </test> <!-- Navigation test -->
+    <test name="login wrong email test" duration-ms="10676" started-at="2019-09-25T18:44:23Z" finished-at="2019-09-25T18:44:34Z">
+      <class name="Amazon.OrderLoginTestWithWorngEmail">
+        <test-method status="PASS" signature="initialize()[pri:0, instance:Amazon.OrderLoginTestWithWorngEmail@747ddf94]" name="initialize" is-config="true" duration-ms="2117" started-at="2019-09-25T14:44:23Z" finished-at="2019-09-25T14:44:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialize -->
+        <test-method status="FAIL" signature="basePageNavigation(java.lang.String)[pri:0, instance:Amazon.OrderLoginTestWithWorngEmail@747ddf94]" name="basePageNavigation" duration-ms="3789" started-at="2019-09-25T14:44:26Z" data-provider="getData" finished-at="2019-09-25T14:44:29Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[wrongaddress124@gmail.com]]>
+              </value>
+            </param>
+          </params>
+          <exception class="junit.framework.ComparisonFailure">
+            <message>
+              <![CDATA[expected:<...> but was:<1...>]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[junit.framework.ComparisonFailure: expected:<...> but was:<1...>
+	at junit.framework.Assert.assertEquals(Assert.java:81)
+	at junit.framework.Assert.assertEquals(Assert.java:87)
+	at Amazon.OrderLoginTestWithWorngEmail.basePageNavigation(OrderLoginTestWithWorngEmail.java:47)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- junit.framework.ComparisonFailure -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- basePageNavigation -->
+        <test-method status="FAIL" signature="basePageNavigation(java.lang.String)[pri:0, instance:Amazon.OrderLoginTestWithWorngEmail@747ddf94]" name="basePageNavigation" duration-ms="2447" started-at="2019-09-25T14:44:29Z" data-provider="getData" finished-at="2019-09-25T14:44:32Z">
           <params>
             <param index="0">
               <value>
@@ -26,31 +89,52 @@
               </value>
             </param>
           </params>
+          <exception class="junit.framework.ComparisonFailure">
+            <message>
+              <![CDATA[expected:<...> but was:<1...>]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[junit.framework.ComparisonFailure: expected:<...> but was:<1...>
+	at junit.framework.Assert.assertEquals(Assert.java:81)
+	at junit.framework.Assert.assertEquals(Assert.java:87)
+	at Amazon.OrderLoginTestWithWorngEmail.basePageNavigation(OrderLoginTestWithWorngEmail.java:47)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- junit.framework.ComparisonFailure -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- basePageNavigation -->
-      </class> <!-- Amazon.OrderLoginTestWithWorngEmail -->
-      <class name="Amazon.NevigationTest">
-        <test-method status="PASS" signature="initialize()[pri:0, instance:Amazon.NevigationTest@c038203]" name="initialize" is-config="true" duration-ms="7199" started-at="2019-09-25T01:35:52Z" finished-at="2019-09-25T01:35:59Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- initialize -->
-        <test-method status="PASS" signature="basePageNavigation(java.lang.String)[pri:0, instance:Amazon.NevigationTest@c038203]" name="basePageNavigation" duration-ms="90" started-at="2019-09-25T01:35:59Z" data-provider="getData" finished-at="2019-09-25T01:36:00Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[wrongaddress124@gmail.com]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- basePageNavigation -->
-        <test-method status="PASS" signature="teardown()[pri:0, instance:Amazon.NevigationTest@c038203]" name="teardown" is-config="true" duration-ms="2078" started-at="2019-09-25T01:36:24Z" finished-at="2019-09-25T01:36:26Z">
+        <test-method status="PASS" signature="teardown()[pri:0, instance:Amazon.OrderLoginTestWithWorngEmail@747ddf94]" name="teardown" is-config="true" duration-ms="2319" started-at="2019-09-25T14:44:32Z" finished-at="2019-09-25T14:44:34Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-      </class> <!-- Amazon.NevigationTest -->
+      </class> <!-- Amazon.OrderLoginTestWithWorngEmail -->
+    </test> <!-- login wrong email test -->
+    <test name="Test" duration-ms="0" started-at="2019-09-25T18:44:34Z" finished-at="2019-09-25T18:44:34Z">
     </test> <!-- Test -->
   </suite> <!-- Suite -->
 </testng-results>

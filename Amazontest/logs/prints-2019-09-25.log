@@ -1,0 +1,6 @@
+16:31:51.032 [main] INFO  Amazon.OrderLoginTestWithWorngEmail - Singin test: 1 Driver is initialized
+16:31:53.607 [main] INFO  Amazon.OrderLoginTestWithWorngEmail - 2. Navigated to Home page
+16:31:54.714 [main] INFO  Amazon.OrderLoginTestWithWorngEmail - 3. Click on order from top nagigation
+16:31:54.923 [main] INFO  Amazon.OrderLoginTestWithWorngEmail - 4, Enter email information in the email box.
+16:31:55.896 [main] INFO  Amazon.OrderLoginTestWithWorngEmail - 5. Click on Continue
+16:31:58.250 [main] INFO  Amazon.OrderLoginTestWithWorngEmail - 2. Navigated to Home page

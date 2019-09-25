@@ -1,22 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Suite]">
-  <test name="Test(failed)">
+  <test name="login wrong email test(failed)">
     <classes>
-      <class name="Amazon.HomePageOrderLoginWrong">
+      <class name="Amazon.OrderLoginTestWithWorngEmail">
+        <methods>
+          <include name="basePageNavigation" invocation-numbers="0 1"/>
+          <include name="initialize"/>
+          <include name="teardown"/>
+        </methods>
+      </class> <!-- Amazon.OrderLoginTestWithWorngEmail -->
+      <class name="Amazon.NevigationTest">
         <methods>
           <include name="teardown"/>
           <include name="initialize"/>
-          <include name="basePageNavigation" invocation-numbers="1"/>
         </methods>
-      </class> <!-- Amazon.HomePageOrderLoginWrong -->
-      <class name="Amazon.HomePageOrderLoginRightEmail_NotPassword">
-        <methods>
-          <include name="teardown"/>
-          <include name="initialize"/>
-          <include name="basePageNavigation" invocation-numbers="1"/>
-        </methods>
-      </class> <!-- Amazon.HomePageOrderLoginRightEmail_NotPassword -->
+      </class> <!-- Amazon.NevigationTest -->
     </classes>
-  </test> <!-- Test(failed) -->
+  </test> <!-- login wrong email test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

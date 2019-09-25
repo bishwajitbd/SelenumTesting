@@ -1,12 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite verbose="0" name="Failed suite [Suite]">
-  <test name="Test(failed)">
+  <listeners>
+    <listener class-name="Amazon.Listeners"/>
+  </listeners>
+  <test name="login wrong email test(failed)">
     <classes>
       <class name="Amazon.OrderLoginTestWithWorngEmail">
         <methods>
-          <include name="basePageNavigation" invocation-numbers="1"/>
           <include name="initialize"/>
+          <include name="orerPageWrongLogin" invocation-numbers="0 1"/>
           <include name="teardown"/>
         </methods>
       </class> <!-- Amazon.OrderLoginTestWithWorngEmail -->
@@ -17,5 +20,5 @@
         </methods>
       </class> <!-- Amazon.NevigationTest -->
     </classes>
-  </test> <!-- Test(failed) -->
+  </test> <!-- login wrong email test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

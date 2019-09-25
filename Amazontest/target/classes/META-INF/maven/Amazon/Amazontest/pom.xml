@@ -8,6 +8,13 @@
   <name>Amazontest</name>
   <url>http://maven.apache.org</url>
   <build>
+      <resources>
+      	<resource>
+      		<directory>src/main/java/resources</directory>
+        	<filtering>true</filtering>
+      	</resource>
+      </resources>
+
 	  <plugins>
 	      <plugin>
 	        <groupId>org.apache.maven.plugins</groupId>
@@ -51,6 +58,12 @@
 	    <groupId>org.apache.logging.log4j</groupId>
 	    <artifactId>log4j-core</artifactId>
 	    <version>2.12.1</version>
-  </dependency>
+  	</dependency>
+  
+  	<dependency>
+	    <groupId>org.apache.directory.studio</groupId>
+	    <artifactId>org.apache.commons.io</artifactId>
+	    <version>2.4</version>
+	</dependency>
   </dependencies>
 </project>
