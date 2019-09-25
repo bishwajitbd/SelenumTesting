@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="3" passed="3">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="21340" started-at="2019-09-25T06:16:28Z" finished-at="2019-09-25T06:16:50Z">
+    <groups>
+    </groups>
+    <test name="Test" duration-ms="21340" started-at="2019-09-25T06:16:28Z" finished-at="2019-09-25T06:16:50Z">
+      <class name="Amazon.OrderLoginTestWithWorngEmail">
+        <test-method status="PASS" signature="basePageNavigation(java.lang.String)[pri:0, instance:Amazon.OrderLoginTestWithWorngEmail@15975490]" name="basePageNavigation" duration-ms="5007" started-at="2019-09-25T02:16:36Z" data-provider="getData" finished-at="2019-09-25T02:16:41Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[wrongaddress124@gmail.com]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- basePageNavigation -->
+        <test-method status="PASS" signature="basePageNavigation(java.lang.String)[pri:0, instance:Amazon.OrderLoginTestWithWorngEmail@15975490]" name="basePageNavigation" duration-ms="6489" started-at="2019-09-25T02:16:41Z" data-provider="getData" finished-at="2019-09-25T02:16:47Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[wrong233@gmail.com]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- basePageNavigation -->
+      </class> <!-- Amazon.OrderLoginTestWithWorngEmail -->
+      <class name="Amazon.NevigationTest">
+        <test-method status="PASS" signature="initialize()[pri:0, instance:Amazon.NevigationTest@7225790e]" name="initialize" is-config="true" duration-ms="5015" started-at="2019-09-25T02:16:28Z" finished-at="2019-09-25T02:16:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialize -->
+        <test-method status="PASS" signature="initialize()[pri:0, instance:Amazon.OrderLoginTestWithWorngEmail@15975490]" name="initialize" is-config="true" duration-ms="2307" started-at="2019-09-25T02:16:34Z" finished-at="2019-09-25T02:16:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialize -->
+        <test-method status="PASS" signature="basePageNavigation(java.lang.String)[pri:0, instance:Amazon.NevigationTest@7225790e]" name="basePageNavigation" duration-ms="67" started-at="2019-09-25T02:16:36Z" data-provider="getData" finished-at="2019-09-25T02:16:36Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[wrongaddress124@gmail.com]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- basePageNavigation -->
+        <test-method status="PASS" signature="teardown()[pri:0, instance:Amazon.NevigationTest@7225790e]" name="teardown" is-config="true" duration-ms="2332" started-at="2019-09-25T02:16:47Z" finished-at="2019-09-25T02:16:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method status="PASS" signature="teardown()[pri:0, instance:Amazon.OrderLoginTestWithWorngEmail@15975490]" name="teardown" is-config="true" duration-ms="113" started-at="2019-09-25T02:16:50Z" finished-at="2019-09-25T02:16:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- Amazon.NevigationTest -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>

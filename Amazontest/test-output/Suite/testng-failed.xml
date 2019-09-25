@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]">
+  <test name="Test(failed)">
+    <classes>
+      <class name="Amazon.HomePageOrderLoginWrong">
+        <methods>
+          <include name="teardown"/>
+          <include name="initialize"/>
+          <include name="basePageNavigation" invocation-numbers="1"/>
+        </methods>
+      </class> <!-- Amazon.HomePageOrderLoginWrong -->
+      <class name="Amazon.HomePageOrderLoginRightEmail_NotPassword">
+        <methods>
+          <include name="teardown"/>
+          <include name="initialize"/>
+          <include name="basePageNavigation" invocation-numbers="1"/>
+        </methods>
+      </class> <!-- Amazon.HomePageOrderLoginRightEmail_NotPassword -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
